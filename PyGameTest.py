@@ -9,9 +9,9 @@ class App:
 
     def on_init(self):
         pygame.init()
-        self._display_surf = pygame.display.set_mode((350,350), pygame.HWSURFACE)
+        self._display_surf = pygame.display.set_mode((1024,1024), pygame.HWSURFACE)
         self._running = True
-        self._image_surf = pygame.image.load("myimage.jpg").convert()
+        self._image_surf = pygame.image.load("Sprites/colored_castle.png").convert()
 
     def on_event(self, event):
         if event.type == QUIT:
